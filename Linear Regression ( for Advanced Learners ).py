@@ -8,7 +8,7 @@ y = df['Exam_Score']
 x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 model = LinearRegression()
 model.fit(x_train, y_train)
-st.title("Exam Score Predictor by vanshaj chaudhary")
+st.title("Exam Score Predictor")
 st.write("Enter hours studied to predict the exam score.")
 hours = st.number_input("Hours Studied:", min_value=0.0, step=0.1)
 if st.button("Predict Score"):
